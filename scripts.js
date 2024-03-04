@@ -2,7 +2,7 @@ console.log(document.title);
 
 //CAMBIAR EL NOMBRE A LA PRIMERA GENERACIÓN:
 
-document.getElementById("gen-1").innerHTML = "Generasion 1 Pokimon";
+document.getElementById("gen-1").innerHTML = "Generasión 1 Pokimon";
 
 //CAMBIAR EL FONDO A LA PRIMERA GENERACIÓN:
 
@@ -29,8 +29,8 @@ console.log(document.images)
 //SUSTITUYE EL ATRIBUTO "SRC" DE TODAS LAS IMAGENES POR ESTE "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
 
 let imgAll = document.querySelectorAll("img")
-for (i = 0 ; i < imgAll.length ; i++) {
-    imgAll[i].setAttribute("src","https://media.giphy.com/media/2v170e71aanfi/giphy.gif")
+for (i = 0; i < imgAll.length; i++) {
+    imgAll[i].setAttribute("src", "https://media.giphy.com/media/2v170e71aanfi/giphy.gif")
 }
 
 //Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itipe flying
@@ -38,8 +38,8 @@ for (i = 0 ; i < imgAll.length ; i++) {
 // Seleccionando directamente a los elemento parent que tiene dicho elemento hijo:
 
 let infoCards = document.querySelectorAll("span:has(.itype.flying)")
-for (i = 0 ; i < infoCards.length ; i++){
-infoCards[i].style.backgroundColor = "red";
+for (i = 0; i < infoCards.length; i++) {
+    infoCards[i].style.backgroundColor = "red";
 }
 
 // Haciendo una selección más genérica y poniendo la condición de que lo incluyan:
